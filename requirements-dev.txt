@@ -1,2 +1,11 @@
 fastapi==0.141.1
 uvicorn[standard]==0.52.1
+steps:
+  - uses: actions/checkout@v4
+
+  # 1. Adicione esta etapa para instalar o Ruff
+  - uses: astral-sh/ruff-action@v3
+
+  # 2. Agora você pode rodar o comando normalmente
+  - name: Run Ruff
+    run: ruff check .
