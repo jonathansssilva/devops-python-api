@@ -32,7 +32,6 @@ def root() -> dict[str, str]:
     }
 
 
-
 @app.get("/health")
 def health() -> dict[str, str]:
     """Endpoint usado por pessoas, containers e pipelines para verificar a API."""
