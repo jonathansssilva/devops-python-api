@@ -1,8 +1,5 @@
-fastapi==0.141.1
-uvicorn[standard]==0.52.1
-
+-r requirements.txt
 ruff
 pytest
 pytest-cov
 httpx
-
